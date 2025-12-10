@@ -12,7 +12,8 @@ An additional script generates **synthetic raw test data** using AI, designed to
 ---
 
 ## Repository Structure
-'''
+
+```
 thesis_hr_gsr_analysis/
 │
 ├── hr/ # Heart Rate (HR) processing scripts
@@ -36,7 +37,7 @@ thesis_hr_gsr_analysis/
 │
 ├── README.md # This file
 └── requirements.txt # Required Python libraries
-'''
+```
 
 
 ---
