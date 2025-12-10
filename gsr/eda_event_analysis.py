@@ -49,12 +49,12 @@ post_event = int(15 * sampling_rate) # 15 sec
 # Input paths
 script_dir = os.path.dirname(os.path.abspath(__file__))
 # Select the correct preprocessed file for the subject
-preprocessed_path = os.path.join(script_dir, "processed_data", f"eda_subject{test_subject}_preprocessed.csv")
+preprocessed_path = os.path.join(script_dir, "preprocessed", f"eda_subject{test_subject}_preprocessed.csv")
 # CHANGE the raw file
 raw_path = os.path.join(os.path.dirname(script_dir), "raw_data", "shimmer_data.csv") # CHANGE this to your raw data file
 
 # Output directory (create if missing)
-analysed_dir = os.path.join(script_dir, "analysed_data")
+analysed_dir = os.path.join(script_dir, "analysed")
 os.makedirs(analysed_dir, exist_ok=True)
 # Output file path
 output_path = os.path.join(analysed_dir, f"eda_subject{test_subject}_event_features.csv")
@@ -226,3 +226,4 @@ plt.show()
 
 
 print("\nAnalysis complete for subject", test_subject)
+
