@@ -1,0 +1,10 @@
+Subject,Event,Mean_HR,Max_HR,Min_HR,Delta_HR,Mean_change_from_Baseline,Max_change_from_baseline
+7,BaselineStart,66.29,69.0,64.0,5.0,-3.83,-1.11
+7,BaselineEnd,74.0,75.0,73.0,2.0,3.89,4.89
+7,Start,95.57,99.0,90.0,9.0,25.46,28.89
+7,DogBarking,93.0,97.0,91.0,6.0,22.89,26.89
+7,Patient,93.29,104.0,82.0,22.0,23.17,33.89
+7,Banging,81.21,93.0,78.0,15.0,11.1,22.89
+7,ManEnters,92.36,96.0,90.0,6.0,22.25,25.89
+7,Exit,111.57,114.0,108.0,6.0,41.46,43.89
+7,End-Recording,71.0,71.0,71.0,0.0,0.89,0.89
