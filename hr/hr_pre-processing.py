@@ -39,7 +39,7 @@ gap_threshold_seconds = 12  # warn if a missing segment > 12 seconds
 # ------ File paths ------
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(script_dir)
-file_path = os.path.join(project_root, "raw_data", "shimmer_data.csv") # NOTE CHANGE the file name as needed
+file_path = os.path.join(project_root, "raw_data", "two_subjects_GSR_HR_data.csv") # NOTE CHANGE the file name as needed
 
 # ------ Read and prepare data ------
 df = pd.read_csv(file_path, low_memory=False)
@@ -157,5 +157,6 @@ for sid, hr_col in zip(subject_ids, hr_cols):
     plt.show() 
 
 print("\nAll subjects processed successfully!")
+
 
 
