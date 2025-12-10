@@ -42,7 +42,7 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(script_dir)
 # CHANGE the raw path file name
 raw_path = os.path.join(project_root, "raw_data", "shimmer_data.csv") # NOTE CHANGE the file name
-processed_path = os.path.join(script_dir, "processed_data", f"hr_subject{subject_id}_preprocessed.csv")
+processed_path = os.path.join(script_dir, "preprocessed", f"hr_subject{subject_id}_preprocessed.csv")
 
 # ------------- LOAD DATA ------------------
 raw_df = pd.read_csv(raw_path, low_memory=False)
@@ -330,3 +330,4 @@ plt.legend()
 plt.tight_layout()
 plt.show()  # Commented out for batch processing
 plt.close('all')  # Explicitly close all figures
+
