@@ -186,6 +186,7 @@ for name, idx in sorted(marker_events, key=lambda x: x[1], reverse=True):
 
 # ---------------- Save ----------------
 data.to_csv(output_path, index=False)
-print(f"✅ Realistic iMotions-style CSV saved to:\n{output_path}")
+print(f"Realistic iMotions-style CSV saved to:\n{output_path}")
 print(f"Total rows (including MarkerEvent lines): {len(data)}")
 print("Inserted MarkerEvent names:", [n for n, _ in marker_events])
+
