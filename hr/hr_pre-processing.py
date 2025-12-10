@@ -111,7 +111,7 @@ for sid, hr_col in zip(subject_ids, hr_cols):
     hr_signal_cleaned = hr_signal_cleaned.where(~hr_signal_cleaned.isna(), np.nan)  # keep true NaNs
     
     # ------ Save processed file ------
-    output_dir = os.path.join(script_dir, "processed_data")
+    output_dir = os.path.join(script_dir, "preprocessed")
     os.makedirs(output_dir, exist_ok=True)
     filename = os.path.join(output_dir, f"hr_subject{sid}_preprocessed.csv")
 
@@ -157,4 +157,5 @@ for sid, hr_col in zip(subject_ids, hr_cols):
     plt.show() 
 
 print("\nAll subjects processed successfully!")
+
 
