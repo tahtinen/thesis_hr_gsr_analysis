@@ -152,12 +152,12 @@ for subject_id, eda_col in zip(subject_id, found_cols):
     # ------ Save processed data ------
 
     # Create the output directories if they don't exist
-    processed_dir = os.path.join(script_dir, "processed_data")
-    analysed_dir = os.path.join(script_dir, "analysed_data")
+    processed_dir = os.path.join(script_dir, "preprocessed")
+    analysed_dir = os.path.join(script_dir, "analysed")
     os.makedirs(processed_dir, exist_ok=True)
     os.makedirs(analysed_dir, exist_ok=True)
 
-    # Save per-sample signals to processed_data (do NOT horizontally concatenate SCR events)
+    # Save per-sample signals to processed (do NOT horizontally concatenate SCR events)
     preproc_filename = os.path.join(processed_dir, f"eda_subject{subject_id}_preprocessed.csv")
     signals.to_csv(preproc_filename, index=False)
     print(f"Saved preprocessed signals: {preproc_filename}")
@@ -172,3 +172,4 @@ for subject_id, eda_col in zip(subject_id, found_cols):
         print("No SCR events detected by NeuroKit2 for this subject.")
 
     print(f"Original length: {len(eda_signal)} | Downsampled: {len(eda_downsampled)}")
+
