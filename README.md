@@ -73,6 +73,7 @@ thesis_hr_gsr_analysis/
 The following steps remain to be completed as part of the AidVerse project:
 
 - Automation of the data processing pipeline
+- Error handling (e.g. missing Markers or sensor losses)
 - Precise localization of GSR events
 - Accurate temporal/per-sample definition of event epochs
 - Running the pipeline across all test participants
